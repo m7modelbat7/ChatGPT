@@ -1,6 +1,6 @@
-import Rituals from "./rituals-of-radiance.mdx";
-import Nocturne from "./nocturne-recovery.mdx";
-import Artistry from "./atelier-artistry.mdx";
+import Rituals, { metadata as ritualsMeta } from "./rituals-of-radiance.mdx";
+import Nocturne, { metadata as nocturneMeta } from "./nocturne-recovery.mdx";
+import Atelier, { metadata as atelierMeta } from "./atelier-artistry.mdx";
 
 export const blogPosts = [
   {

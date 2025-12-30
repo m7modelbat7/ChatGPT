@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "luminous-rituals",
+    "name": "Luminous Rituals",
+    "description": "Radiance-forward essentials powered by alpine botanicals.",
+    "highlight": "Best for daily glow"
+  },
+  {
+    "slug": "velvet-nocturne",
+    "name": "Velvet Nocturne",
+    "description": "Nighttime recovery with replenishing oils and peptides.",
+    "highlight": "Overnight renewal"
+  },
+  {
+    "slug": "atelier-essentials",
+    "name": "Atelier Essentials",
+    "description": "Minimalist icons for complexion and soft-focus artistry.",
+    "highlight": "Everyday polish"
+  },
+  {
+    "slug": "silk-impressions",
+    "name": "Silk Impressions",
+    "description": "Fine fragrances inspired by modern ateliers and travel.",
+    "highlight": "Signature scents"
+  }
+]

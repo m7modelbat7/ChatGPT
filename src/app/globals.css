@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 20% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 12%;
+  --primary: 14 54% 48%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 24 22% 95%;
+  --muted-foreground: 220 10% 40%;
+  --border: 20 12% 88%;
+  --accent: 24 35% 90%;
+  --accent-foreground: 220 20% 12%;
+  color-scheme: light;
+}
+
+.dark {
+  --background: 220 20% 9%;
+  --foreground: 0 0% 96%;
+  --card: 220 20% 12%;
+  --card-foreground: 0 0% 96%;
+  --primary: 14 70% 55%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 220 16% 18%;
+  --muted-foreground: 0 0% 70%;
+  --border: 220 12% 22%;
+  --accent: 220 18% 20%;
+  --accent-foreground: 0 0% 96%;
+  color-scheme: dark;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+main {
+  @apply min-h-screen;
+}
+
+section {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.link-underline {
+  @apply relative inline-flex items-center;
+}
+
+.link-underline::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 h-px w-full bg-current opacity-30 transition-opacity;
+}
+
+.link-underline:hover::after {
+  @apply opacity-70;
+}

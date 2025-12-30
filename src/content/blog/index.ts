@@ -10,23 +10,29 @@ export type BlogPostMeta = {
   tags?: string[];
 };
 
+type BlogPost = {
+  slug: string;
+  component: (props: Record<string, unknown>) => JSX.Element;
+  metadata: BlogPostMeta;
+};
+
 export const posts = [
   {
     slug: "rituals-of-radiance",
     component: Rituals,
-    metadata: ritualsMeta as BlogPostMeta,
+    metadata: ritualsMeta,
   },
   {
     slug: "nocturne-recovery",
     component: Nocturne,
-    metadata: nocturneMeta as BlogPostMeta,
+    metadata: nocturneMeta,
   },
   {
     slug: "atelier-artistry",
     component: Atelier,
-    metadata: atelierMeta as BlogPostMeta,
+    metadata: atelierMeta,
   },
-] as const;
+] satisfies ReadonlyArray<BlogPost>;
 
 export function getPostBySlug(slug: string) {
   return posts.find((p) => p.slug === slug);

@@ -34,8 +34,6 @@ export const posts = [
   },
 ] satisfies ReadonlyArray<BlogPost>;
 
-export const blogPosts = posts;
-
 export function getPostBySlug(slug: string) {
   return posts.find((p) => p.slug === slug);
 }
